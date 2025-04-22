@@ -59,27 +59,41 @@ const App = () => {
           <h2 className="text-3xl font-bold mb-8">Projects</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Project Card Example */}
+
+            {/* My portfolio projecct */}
             <div className="bg-white rounded-xl shadow p-6">
               <h3 className="text-xl font-semibold mb-2">
                 My Portfolio Website
               </h3>
               <p className="mb-4">
                 A personal portfolio site built with React and TailwindCSS.
+                <ul className="list-disc mt-2 pl-3">
+                  <li>Smooth navigation and page transitions</li>
+                  <li>Responsive design for all screen sizes</li>
+                  <li>Projects and skills dynamically displayed</li>
+                  <li>Contact form with form validation </li>
+                  <li>Clean and modern UI/UX</li>
+                </ul>
               </p>
               <a
-                href="#"
+                href="https://subrotokumarbarman.netlify.app/"
                 className="text-indigo-600 font-semibold hover:underline"
               >
                 Live Preview →
               </a>
             </div>
-
+            {/* Chatting Aplication Link */}
             <div className="bg-white rounded-xl shadow p-6">
               <h3 className="text-xl font-semibold mb-2">Chating Aplication</h3>
               <p className="mb-4">
-             
                 A real-time messaging platform enabling users to send and
                 receive messages instantly.
+                <ul className="list-disc mt-2 pl-3">
+                  <li>Real-time messaging with WebSockets</li>
+                  <li>Secure user authentication and session management</li>
+                  <li>Scalable backend with Firebase</li>
+                  <li>Clean code structure and reusable components</li>
+                </ul>
               </p>
               <a
                 href="https://chattingaplication.netlify.app/"
