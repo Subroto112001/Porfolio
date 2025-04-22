@@ -6,31 +6,34 @@ const App = () => {
   return (
     <div className="font-sans text-gray-800">
       {/* Hero Section */}
-      <div className="min-h-screen flex gap-32 justify-center items-center bg-gradient-to-br from-blue-500 to-indigo-600 text-white p-6">
+      <div className="min-h-screen flex flex-col lg:flex-row gap-10 lg:gap-32 justify-center items-center bg-gradient-to-br from-blue-500 to-indigo-600 text-white p-6">
+        {/* Left Side - Profile Image */}
         <div className="left">
-          <div className="w-[300px] h-[300px] rounded-full">
+          <div className="w-40 h-40 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden mx-auto">
             <picture>
               <img
                 src={Imgae}
-                alt={Imgae}
-                className="w-full object-cover rounded-full"
+                alt={Imgae} 
+                className="w-full h-full object-cover"
               />
             </picture>
           </div>
         </div>
-        <div className="right flex flex-col justify-center items-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+
+        {/* Right Side - Intro Text */}
+        <div className="right flex flex-col items-center justify-center text-center px-4 py-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             Hi, I'm Subroto Kumar Barman
           </h1>
-          <p className="text-xl md:text-2xl">
+          <p className="text-lg md:text-xl text-white/90">
             Front-End Developer | React Enthusiast
           </p>
-          <p className="mt-3 text-xl md:text-2xl">
-            HTML| CSS5 | BootStrap | Tailwind CSS | JavaScript | React.js
+          <p className="mt-3 text-base md:text-lg text-white/80">
+            HTML | CSS3 | Bootstrap | Tailwind CSS | JavaScript | React.js
           </p>
           <a
             href="#projects"
-            className="mt-6 bg-white text-indigo-600 font-semibold px-6 py-2 rounded-full shadow hover:bg-gray-100 transition"
+            className="mt-6 bg-white text-indigo-600 font-semibold px-6 py-2 rounded-full shadow-md hover:bg-gray-100 transition duration-300"
           >
             View Projects
           </a>
@@ -68,11 +71,16 @@ const App = () => {
               <p className="mb-4">
                 A personal portfolio site built with React and TailwindCSS.
                 <ul className="list-disc mt-2 pl-3">
-                  <li>Smooth navigation and page transitions</li>
+                  <li>
+                    Fully responsive design optimized for desktop and mobile
+                    devices
+                  </li>
                   <li>Responsive design for all screen sizes</li>
-                  <li>Projects and skills dynamically displayed</li>
-                  <li>Contact form with form validation </li>
-                  <li>Clean and modern UI/UX</li>
+                  <li>Dynamic project and skill sections for easy updates</li>
+                  <li>Contact form with validation for user engagement </li>
+                  <li>
+                    Clean, user-friendly interface with modern UI/UX principles
+                  </li>
                 </ul>
               </p>
               <a
@@ -88,6 +96,8 @@ const App = () => {
               <p className="mb-4">
                 A real-time messaging platform enabling users to send and
                 receive messages instantly.
+
+                *I am working on this project.
                 <ul className="list-disc mt-2 pl-3">
                   <li>Real-time messaging with WebSockets</li>
                   <li>Secure user authentication and session management</li>
